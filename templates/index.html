@@ -134,7 +134,6 @@
       finalScoreDisplay.style.display = 'block';
       finalScoreDisplay.textContent = `Spēle beigusies! Punktu skaits: ${score}`;
 
-      // Send score to Python backend
       fetch('/submit_score', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
